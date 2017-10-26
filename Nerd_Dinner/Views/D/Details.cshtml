@@ -1,0 +1,57 @@
+﻿@model Nerd_Dinner.Models.D_Model
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>D_Model</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Title)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Title)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.EventDate)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.EventDate)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.HostedBy)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.HostedBy)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Contact)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Contact)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Address)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Address)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Dinner_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
